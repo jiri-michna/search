@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="./CSS/search_style.css">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-prim">
+            <div class="container-fluid">
+                <a class="navbar-brand mw" href="#">Image search</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Hlavní</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Brambory
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="brambory.html">Brambory</a></li>
+                                <li><a class="dropdown-item" href="#">(Sklizeň)</a></li>
+                                <li><a class="dropdown-item" href="#">(Pokrmy z brambor)</a></li>
+                                <li><a class="dropdown-item" href="#">(Sazba)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Formulář</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="image.html">Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="advanced.html">Advanced</a>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div class="midd"><img src="./IMG/google.jpg" alt="google"></div>
+
+        <div id="m_auto">
+            
+            <form method="get" action="http://images.google.cz/images">
+                <input type="text" name="q" />
+                <input type="submit" value="Google Image Search" />
+            </form>
+        </div>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
